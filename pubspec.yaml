@@ -1,0 +1,533 @@
+name: inferwise
+description: "Inferwise is an interactive learning app focused on inference skills through visual challenges."
+
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+  path: ^1.8.3
+  google_fonts: ^8.1.0
+  animate_do: ^4.2.0
+  shared_preferences: ^2.5.2
+  image_picker: ^1.1.2
+  crypto: ^3.0.6
+  file_picker: ^9.2.3
+  page_flip_builder: ^0.1.4
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.6
+  firebase_core: ^3.13.0
+  logger: ^2.5.0
+  flutter_flip_card: ^0.0.6
+  url_launcher: ^6.3.1
+  lottie: ^3.3.1
+  confetti: ^0.8.0
+  loading_animation_widget: ^1.3.0
+  flutter_staggered_animations: ^1.1.1
+  font_awesome_flutter: ^10.9.1
+  flutter_animate: ^4.5.2
+  intl: ^0.20.2
+  animations: ^2.0.11
+  
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/Miniatura.png"
+  
+
+flutter:
+
+  assets:
+  
+
+
+   #------------------------------- Wallpapers
+   
+    - assets/Wallpapers/Wallpaper  Library.png
+    - assets/Wallpapers/2. Wallpaper User.png
+    - assets/Wallpapers/1. Wallpaper Medals.png # mo se usa
+    - assets/Wallpapers/Wallpaper  Medals.png
+    - assets/Wallpapers/PATHWAY WALLPAPER.webp # Checkpoint wallpaper 1
+    - assets/Wallpapers/PATHWAY 2.0B.webp # Pathway
+    - assets/Wallpapers/CHECKSPOT 2.webp # Checkpoint wallpaper 2
+    - assets/Wallpapers/CHECKSPOT 3.webp # Checkpoint wallpaper 3
+    - assets/Wallpapers/CHECKSPOT 4.webp # Checkpoint wallpaper 4
+    - assets/Wallpapers/CHECKSPOT 5.webp # Checkpoint wallpaper 5
+    - assets/Wallpapers/FINAL TEST.webp # Final Test wallpaper
+    - assets/Wallpapers/WallPaperReadingSpots/FONDO GOAL INSTRUCTION 4 Y Bios.webp
+    - assets/Wallpapers/WallPaperReadingSpots/FONDO GOAL INSTRUCTION 1B Y news.webp
+    - assets/Wallpapers/WallPaperReadingSpots/FONDO GOAL INSTRUCTION 3 Y stories.webp
+    - assets/Wallpapers/WallPaperReadingSpots/FONDO GOAL INSTRUCTION 5 y articles.webp
+
+    #-------------------------------  Goals Wallpapers
+    - assets/Wallpapers/Goals/FONDO GOAL INSTRUCTION 1B.webp # Goal 1 wallpaper
+
+    #-------------------------------  Referential Test
+    - assets/Miniatura.png
+    #-------------------------------pantalla de carga
+    - assets/Logo-Inicio.png
+    - assets/User Profile Illustrations/Designer (1).png
+    - assets/User Profile Illustrations/Designer (2).png
+    - assets/User Profile Illustrations/Designer (3).png
+    - assets/User Profile Illustrations/Designer (4).png
+    - assets/User Profile Illustrations/Designer (5).png
+    - assets/User Profile Illustrations/Designer (6).png
+    - assets/User Profile Illustrations/Designer (7).png
+    - assets/User Profile Illustrations/Designer (8).png
+    - assets/User Profile Illustrations/Designer (9).png
+    - assets/User Profile Illustrations/Designer (10).png
+    - assets/User Profile Illustrations/Designer (11).png
+    - assets/User Profile Illustrations/Designer (12).png
+
+    #------------------------------ Books 
+
+    
+    - assets/texts/4. Houses made of waste changing lives in South America.txt
+    - assets/texts/5. Uganda’s anti-gay law sparks global concerns.txt
+    - assets/texts/6. A recovery center in Nigeria takes a musical approach to combating drug addiction.txt
+    - assets/texts/7. The Star Beast.txt
+    - assets/texts/8. Désirée’s Baby.txt
+    - assets/texts/9. The Shadow.txt
+    - assets/texts/10. The Role of Mobile Health (mHealth) in Primary Care_ Opportunities and Challenges.txt
+    - assets/texts/11. Gender Stereotypes in AI-Generated Images_ Biases, Implications, and Solutions.txt
+    - assets/texts/12. Sustainable Development Through Eco-Innovation_ The Role of Small and Medium Enterprises in Colombia.txt
+
+    
+    - assets/texts/The Nothing Equation.txt
+    - assets/texts/A Dill Pickle.txt
+    - assets/texts/The Tell-Tale Heart.txt
+
+    - assets/texts/The Global Transition to Electric Vehicles_ Technological, Environmental, Organizational, and Policy Perspectives.txt
+    - assets/texts/The Actualization of Loneliness in Modern Philosophy_ Historical Perspectives and Contemporary Reflections.txt
+    - assets/texts/Pathways to a Net Zero Building Sector in Colombia_ Challenges, Strategies, and Opportunities.txt
+
+
+    - assets/texts/How Evolution Might Explain Impatience.txt
+    - assets/texts/Q&A_ ‘Fear of Laughter’ Keeps Girls Quiet at School.txt
+    - assets/texts/Feminist Literature Under Fire_ The ‘Cometierra’ Controversy in Argentina.txt
+
+    - assets/texts/Bamboo as a Sustainable Building Material for Innovative, Low-Cost Housing Construction.txt
+    - assets/texts/Advancements in 3D Bioprinting_ A New Era in Tissue Engineering.txt
+    - assets/texts/Communication Strategies for Dementia Care_ A New Perspective on Caregiving.txt
+
+    - assets/texts/Ai Chatbot Deployed to Target Drug Resistance.txt
+    - assets/texts/Polio Survivors Face Biggest Fight of Their Lives.txt
+    - assets/texts/In Venezuela, Theater is also Part of the Resistance.txt
+
+    - assets/texts/The Outsider.txt
+    - assets/texts/The Plutonian Drug.txt
+    - assets/texts/Sweat.txt
+
+    - assets/texts/Indigenous People Raise Voices to Avert Amazon Tipping Point.txt
+    - assets/texts/Syrians Turn War Missiles into Heaters as Winter Grips.txt
+    - assets/texts/Brazilian Graffiti Artists and Young Syrians Are Painting Refugee Camp Walls Together.txt
+
+    - assets/texts/2BR02B.txt
+    - assets/texts/The Pearl of Love.txt
+    - assets/texts/The Yellow Wallpaper.txt
+
+    - assets/texts/The Evolution of Mars Water-Ice Detection Research (1990-2024).txt
+    - assets/texts/The Impact of Environmental Pollution on the Sustainability of Architectural Heritage_ The Case of Cartagena de Indias.txt
+    - assets/texts/Burnout and Depression in College Students.txt
+
+    - assets/texts/A Sound of Thunder.txt
+    - assets/texts/The Nightingale and the Rose.txt
+    - assets/texts/The Spider.txt
+
+    - assets/texts/Cybersecurity and Data Science_ The Role of Machine Learning in Cyber Threat Protection.txt
+    - assets/texts/Media and Policy Making in the Digital Age_ Challenges, Opportunities, and Transformations.txt
+    - assets/texts/The United Nations Sustainable Development Goals_ A Comparative Analysis of Implementation, Challenges, and Opportunities.txt
+
+    - assets/texts/A Central African Designer is Transforming Sneakers into Portable Manga in Senegal.txt
+    - assets/texts/The Urgent Mental Health Needs of Young People.txt
+    - assets/texts/Will the US Get to Mars Quicker if it Drops or Delays Plans to Visit the Moon.txt
+    #-----------------------------------------------------------------------
+    - assets/texts/Biblio/Lvl1/1. From Spark to Genius_ Nikola Tesla’s Early Life.txt
+    - assets/texts/Biblio/Lvl1/2. Cleopatra VIII.txt
+    - assets/texts/Biblio/Lvl1/3. Hellen Keller, The Story of my Life_ Chapters IV to VI.txt
+
+    - assets/texts/Biblio/Lvl2/1. Ynes E. J. Mexia, Where Love for Science Meets the Spirit of Adventure.txt
+    - assets/texts/Biblio/Lvl2/2. The Story of Atahualpa, Last Inca Emperor.txt
+    - assets/texts/Biblio/Lvl2/3. Nietzsche_ His Life and Works.txt
+
+    - assets/texts/Biblio/Lvl3/1. Alexander Graham Bell And The Telephone.txt
+    - assets/texts/Biblio/Lvl3/2. Life and Times of Mandela.txt
+    - assets/texts/Biblio/Lvl3/3. Girls Who Became Famous_ Florence Nightingale.txt
+
+    - assets/texts/Biblio/Lvl4/1. The Wright Brothers’ Aeroplane.txt
+    - assets/texts/Biblio/Lvl4/2. Lives of Poor Boys Who Became Famous_ Abraham Lincon.txt
+    - assets/texts/Biblio/Lvl4/3. Memoir of Jane Austen_ Fragment.txt
+
+    - assets/texts/Biblio/Lvl5/1. Giuseppina Cattani, the Unknown Co-Discoverer of the Antitetanus Serum.txt
+    - assets/texts/Biblio/Lvl5/2. The Story of Joan of Arc_ Fragments.txt
+    - assets/texts/Biblio/Lvl5/3. Famous Men of Ancient Times_ Socrates.txt
+
+
+
+
+    
+    #------------------------------ Stamps
+    - assets/News Stamps/News 1.png
+    - assets/News Stamps/News 2.png
+    - assets/News Stamps/News 3.png
+    - assets/News Stamps/News 4.png
+    - assets/News Stamps/News 5.png
+    - assets/News Stamps/News 6.png
+    - assets/News Stamps/News 7.png
+    - assets/News Stamps/News 8.png
+    - assets/News Stamps/News 9.png
+    - assets/News Stamps/News 10.png
+    - assets/News Stamps/News 11.png
+    - assets/News Stamps/News 12.png
+    - assets/News Stamps/News 13.png
+    - assets/News Stamps/News 14.png
+    - assets/News Stamps/News 15.png
+
+    - assets/Stories Stamps/Story 1.png
+    - assets/Stories Stamps/Story 2.png
+    - assets/Stories Stamps/Story 3.png
+    - assets/Stories Stamps/Story 4.png
+    - assets/Stories Stamps/Story 5.png
+    - assets/Stories Stamps/Story 6.png
+    - assets/Stories Stamps/Story 7.png
+    - assets/Stories Stamps/Story 8.png
+    - assets/Stories Stamps/Story 9.png
+    - assets/Stories Stamps/Story 10.png
+    - assets/Stories Stamps/Story 11.png
+    - assets/Stories Stamps/Story 12.png
+    - assets/Stories Stamps/Story 13.png
+    - assets/Stories Stamps/Story 14.png
+    - assets/Stories Stamps/Story 15.png
+    #-------------------------------
+    - assets/Articles Stamps/Article 1.png
+    - assets/Articles Stamps/Article 2.png
+    - assets/Articles Stamps/Article 3.png
+    - assets/Articles Stamps/Article 4.png
+    - assets/Articles Stamps/Article 5.png
+    - assets/Articles Stamps/Article 6.png
+    - assets/Articles Stamps/Article 7.png
+    - assets/Articles Stamps/Article 8.png
+    - assets/Articles Stamps/Article 9.png
+    - assets/Articles Stamps/Article 10.png
+    - assets/Articles Stamps/Article 11.png
+    - assets/Articles Stamps/Article 12.png
+    - assets/Articles Stamps/Article 13.png
+    - assets/Articles Stamps/Article 14.png
+    - assets/Articles Stamps/Article 15.png
+
+    #------------------------------ Biography Stamps
+    - assets/Biography Stamps/Biography 1.png
+    - assets/Biography Stamps/Biography 2.png
+    - assets/Biography Stamps/Biography 3.png
+    - assets/Biography Stamps/Biography 4.png
+    - assets/Biography Stamps/Biography 5.png
+    - assets/Biography Stamps/Biography 6.png
+    - assets/Biography Stamps/Biography 7.png
+    - assets/Biography Stamps/Biography 8.png
+    - assets/Biography Stamps/Biography 9.png
+    - assets/Biography Stamps/Biography 10.png
+    - assets/Biography Stamps/Biography 11.png
+    - assets/Biography Stamps/Biography 12.png
+    - assets/Biography Stamps/Biography 13.png
+    - assets/Biography Stamps/Biography 14.png
+    - assets/Biography Stamps/Biography 15.png
+
+    #------------------------------ Books covers 1
+    - assets/covers/Story/Story 1.png #
+    - assets/covers/Story/Story 2.png #
+    - assets/covers/Story 3.png #
+    - assets/covers/Story/Story 4.png #
+    - assets/covers/Story/Story 5.png #
+    - assets/covers/Story/Story 6.png #
+    - assets/covers/Story/Story 7.png #
+    - assets/covers/Story/Story 8.png #
+    - assets/covers/Story/Story 9.png #
+    - assets/covers/Story/Story 10.png
+    - assets/covers/Story/Story 11.png
+    - assets/covers/Story/Story 12.png
+    - assets/covers/Story/Story 13.png
+    - assets/covers/Story/Story 14.png
+    - assets/covers/Story/Story 15.png
+    
+    - assets/covers/News covers/News 1.png #
+    - assets/covers/News covers/News 2.png #
+    - assets/covers/News covers/News 3.png #
+    - assets/covers/News covers/News 4.png #
+    - assets/covers/News covers/News 5.png #
+    - assets/covers/News covers/News 6.png #
+    - assets/covers/News covers/News 7.png #
+    - assets/covers/News covers/News 8.png #
+    - assets/covers/News covers/News 9.png #
+    - assets/covers/News covers/News 10.png
+    - assets/covers/News covers/News 11.png
+    - assets/covers/News covers/News 12.png
+    - assets/covers/News covers/News 13.png
+    - assets/covers/News covers/News 14.png
+    - assets/covers/News covers/News 15.png
+
+    - assets/covers/Article covers/Article 1.png #
+    - assets/covers/Article covers/Article 2.png #
+    - assets/covers/Article covers/Article 3.png #
+    - assets/covers/Article covers/Article 4.png #
+    - assets/covers/Article covers/Article 5.png #
+    - assets/covers/Article covers/Article 6.png #
+    - assets/covers/Article covers/Article 7.png #
+    - assets/covers/Article covers/Article 8.png #
+    - assets/covers/Article covers/Article 9.png #
+    - assets/covers/Article covers/Article 10.png
+    - assets/covers/Article covers/Article 11.png
+    - assets/covers/Article covers/Article 12.png
+    - assets/covers/Article covers/Article 13.png
+    - assets/covers/Article covers/Article 14.png
+    - assets/covers/Article covers/Article 15.png
+
+    - assets/covers/Biography covers/Biography 1.png #
+    - assets/covers/Biography covers/Biography 2.png #
+    - assets/covers/Biography covers/Biography 3.png #
+    - assets/covers/Biography covers/Biography 4.png #
+    - assets/covers/Biography covers/Biography 5.png #
+    - assets/covers/Biography covers/Biography 6.png #
+    - assets/covers/Biography covers/Biography 7.png #
+    - assets/covers/Biography covers/Biography 8.png #
+    - assets/covers/Biography covers/Biography 9.png #
+    - assets/covers/Biography covers/Biography 10.png
+    - assets/covers/Biography covers/Biography 11.png
+    - assets/covers/Biography covers/Biography 12.png
+    - assets/covers/Biography covers/Biography 13.png
+    - assets/covers/Biography covers/Biography 14.png
+    - assets/covers/Biography covers/Biography 15.png
+
+    #------------------------------------------------ Medals 
+
+    - assets/Medals/1. Referential Ranger.png
+    - assets/Medals/2. Lexical Linker.png
+    - assets/Medals/3. Explanation Expert.png
+    - assets/Medals/4. Associative Architect.png
+    - assets/Medals/5. Prediction Pioner.png
+    - assets/Medals/6. Infera Champion.png
+    - assets/Medals/7. Lifetime Teller.png
+    - assets/Medals/8. News Nexus.png
+    - assets/Medals/9. Narrative Master.png
+    - assets/Medals/10. Scholar Star.png
+
+    #------------------------------------------------ Banners
+    - assets/Banners/Biography/Biography 1.1.png
+    - assets/Banners/Biography/Biography 1.2.png
+    - assets/Banners/Biography/Biography 1.3.png
+    - assets/Banners/Biography/Biography 2.1.png
+    - assets/Banners/Biography/Biography 2.2.png
+    - assets/Banners/Biography/Biography 2.3.png
+    - assets/Banners/Biography/Biography 3.1.png
+    - assets/Banners/Biography/Biography 3.2.png
+    - assets/Banners/Biography/Biography 3.3.png
+    - assets/Banners/Biography/Biography 4.1.png
+    - assets/Banners/Biography/Biography 4.2.png
+    - assets/Banners/Biography/Biography 4.3.png
+    - assets/Banners/Biography/Biography 5.1.png
+    - assets/Banners/Biography/Biography 5.2.png
+    - assets/Banners/Biography/Biography 5.3.png
+
+    - assets/Banners/News/News 1.1.png
+    - assets/Banners/News/News 1.2.png
+    - assets/Banners/News/News 1.3.png
+    - assets/Banners/News/News 2.1.png
+    - assets/Banners/News/News 2.2.png
+    - assets/Banners/News/News 2.3.png
+    - assets/Banners/News/News 3.1.png
+    - assets/Banners/News/News 3.2.png
+    - assets/Banners/News/News 3.3.png
+    - assets/Banners/News/News 4.1.png
+    - assets/Banners/News/News 4.2.png
+    - assets/Banners/News/News 4.3.png
+    - assets/Banners/News/News 5.1.png
+    - assets/Banners/News/News 5.2.png
+    - assets/Banners/News/News 5.3.png
+
+    - assets/Banners/Story/Story 1.1.png
+    - assets/Banners/Story/Story 1.2.png
+    - assets/Banners/Story/Story 1.3.png
+    - assets/Banners/Story/Story 2.1.png
+    - assets/Banners/Story/Story 2.2.png
+    - assets/Banners/Story/Story 2.3.png
+    - assets/Banners/Story/Story 3.1.png
+    - assets/Banners/Story/Story 3.2.png
+    - assets/Banners/Story/Story 3.3.png
+    - assets/Banners/Story/Story 4.1.png
+    - assets/Banners/Story/Story 4.2.png
+    - assets/Banners/Story/Story 4.3.png
+    - assets/Banners/Story/Story 5.1.png
+    - assets/Banners/Story/Story 5.2.png
+    - assets/Banners/Story/Story 5.3.png
+
+    - assets/Banners/Article/Article 1.1.png
+    - assets/Banners/Article/Article 1.2.png
+    - assets/Banners/Article/Article 1.3.png
+    - assets/Banners/Article/Article 2.1.png
+    - assets/Banners/Article/Article 2.2.png
+    - assets/Banners/Article/Article 2.3.png
+    - assets/Banners/Article/Article 3.1.png
+    - assets/Banners/Article/Article 3.2.png
+    - assets/Banners/Article/Article 3.3.png
+    - assets/Banners/Article/Article 4.1.png
+    - assets/Banners/Article/Article 4.2.png
+    - assets/Banners/Article/Article 4.3.png
+    - assets/Banners/Article/Article 5.1.png
+    - assets/Banners/Article/Article 5.2.png
+    - assets/Banners/Article/Article 5.3.png
+
+#------------------------------- Challenges Puzzles
+    - assets/PUZZLES/L1-1.png
+    - assets/PUZZLES/L1-2.png
+    - assets/PUZZLES/L1-3.png
+    - assets/PUZZLES/L1-4.png
+    - assets/PUZZLES/L2-1.webp
+    - assets/PUZZLES/L2-2.webp
+    - assets/PUZZLES/L2-3.webp
+    - assets/PUZZLES/L2-4.webp
+    - assets/PUZZLES/L3-1.webp
+    - assets/PUZZLES/L3-2.webp
+    - assets/PUZZLES/L3-3.webp
+    - assets/PUZZLES/L3-4.webp
+    - assets/PUZZLES/L4-1.webp
+    - assets/PUZZLES/L4-2.webp
+    - assets/PUZZLES/L4-3.webp
+    - assets/PUZZLES/L4-4.webp
+    - assets/PUZZLES/L5-1.webp
+    - assets/PUZZLES/L5-2.webp
+    - assets/PUZZLES/L5-3.webp
+    - assets/PUZZLES/L5-4.webp
+#-------------------------------examples images 1
+    - assets/Imagenes de ejemplos/Level1/1.1 A Marie.webp 
+    - assets/Imagenes de ejemplos/Level1/1.1 B Phone.webp
+    - assets/Imagenes de ejemplos/Level1/1.1 C Table.webp
+    - assets/Imagenes de ejemplos/Level1/1.1 D Student.webp
+    - assets/Imagenes de ejemplos/Level1/1.2 A Jake.webp
+    - assets/Imagenes de ejemplos/Level1/1.2 B Sarah.webp
+    - assets/Imagenes de ejemplos/Level1/1.2 C Researcher.webp
+    - assets/Imagenes de ejemplos/Level1/1.2 D Experiment.webp
+#-------------------------------examples images 2
+    - assets/Imagenes de ejemplos/Level2/2.1 A Double.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 B Admiring.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 C Photo.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 D Intelligent.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 E Problem.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 F Embarrassed.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 G Library.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 H Exit.webp
+    - assets/Imagenes de ejemplos/Level2/2.1 I Fabric.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 A Impossible.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 B Mislead.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 C Unhappy.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 D Rewrite.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 E Preview.webp
+    - assets/Imagenes de ejemplos/Level2/2.2 F Disagree.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 A Kindness.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 B Brotherhood.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 C Slowly.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 D Teacher.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 E Washable.webp
+    - assets/Imagenes de ejemplos/Level2/2.3 F Hopeless.webp
+    - assets/Imagenes de ejemplos/Level2/2.4 A Lena.webp
+    - assets/Imagenes de ejemplos/Level2/2.4 B Jake.webp
+    - assets/Imagenes de ejemplos/Level2/2.4 C Miguel.webp
+
+#-------------------------------examples images 3
+    - assets/Imagenes de ejemplos/Level3/3.1 A Uprotted trees.webp
+    - assets/Imagenes de ejemplos/Level3/3.1 B Campfire.webp
+    - assets/Imagenes de ejemplos/Level3/3.1 C Soccer field.webp
+    - assets/Imagenes de ejemplos/Level3/3.1 D Fire alarm.webp
+    - assets/Imagenes de ejemplos/Level3/3.1 E Emma.webp
+    - assets/Imagenes de ejemplos/Level3/3.1 F Leo.webp
+    - assets/Imagenes de ejemplos/Level3/3.2 A Lena.webp
+    - assets/Imagenes de ejemplos/Level3/3.2 B James.webp
+    - assets/Imagenes de ejemplos/Level3/3.2 C Sophie.webp
+    - assets/Imagenes de ejemplos/Level3/3.2 D The detective.webp
+#-------------------------------examples images 4
+    - assets/Imagenes de ejemplos/Level4/4.1 A Sophia.webp
+    - assets/Imagenes de ejemplos/Level4/4.1 B Lucas.webp
+    - assets/Imagenes de ejemplos/Level4/4.1 C The Carpenter.webp
+    - assets/Imagenes de ejemplos/Level4/4.1 D Mia.webp
+    - assets/Imagenes de ejemplos/Level4/4.2 A Liam.webp
+    - assets/Imagenes de ejemplos/Level4/4.2 B Helmet.webp
+    - assets/Imagenes de ejemplos/Level4/4.2 C Kids.webp
+    - assets/Imagenes de ejemplos/Level4/4.2 D Fishing rod.webp
+    - assets/Imagenes de ejemplos/Level4/4.3 A Leaves.webp
+    - assets/Imagenes de ejemplos/Level4/4.3 B Streetlights.webp
+    - assets/Imagenes de ejemplos/Level4/4.3 C Jump out of bed.webp
+    - assets/Imagenes de ejemplos/Level4/4.3 D Fireworks.webp
+    - assets/Imagenes de ejemplos/Level4/4.4 A The door.webp
+    - assets/Imagenes de ejemplos/Level4/4.4 B The window.webp
+    - assets/Imagenes de ejemplos/Level4/4.4 C The lights.webp
+    - assets/Imagenes de ejemplos/Level4/4.4 D The fridge.webp
+    - assets/Imagenes de ejemplos/Level4/4.5 A Sophia.webp
+    - assets/Imagenes de ejemplos/Level4/4.5 B The students 4.5.webp
+    - assets/Imagenes de ejemplos/Level4/4.5 C Jake.webp 
+    - assets/Imagenes de ejemplos/Level4/4.5 D Grandma.webp
+#-------------------------------examples images 5
+    - assets/Imagenes de ejemplos/Level5/5.1 A Soldier.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 B Maria.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 C Young boy.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 D Train.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 E Merchant.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 F King.webp
+    - assets/Imagenes de ejemplos/Level5/5.1 G House.webp
+    - assets/Imagenes de ejemplos/Level5/5.2 A_Tom.webp
+    - assets/Imagenes de ejemplos/Level5/5.2 B_Sarah.webp
+    - assets/Imagenes de ejemplos/Level5/5.2 C Liam Training.webp
+    - assets/Imagenes de ejemplos/Level5/5.2 D A glass.webp
+    
+
+
+
+
+
+
+
+
+
+#-------------------------------Items
+    - assets/Items/Walking-Steps--Streamline-Flex.png
+    - assets/Items/f.png
+    - assets/Items/S.webp
+    - assets/Items/vecteezy_simple-white-shoes-sneakers-vector_11864538.webp
+
+
+  uses-material-design: true
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
