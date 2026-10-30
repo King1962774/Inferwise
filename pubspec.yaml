@@ -67,6 +67,7 @@ flutter:
 
    #------------------------------- Wallpapers
    
+   
     - assets/Wallpapers/Wallpaper  Library.png
     - assets/Wallpapers/2. Wallpaper User.png
     - assets/Wallpapers/1. Wallpaper Medals.png # mo se usa
@@ -514,6 +515,10 @@ flutter:
     - assets/Items/f.png
     - assets/Items/S.webp
     - assets/Items/vecteezy_simple-white-shoes-sneakers-vector_11864538.webp
+    - assets/Photos/Challenges.jpeg
+    - assets/Photos/Inicio.jpeg
+    - assets/Photos/Panel.jpeg
+    - assets/Photos/Library.jpeg
 
 
   uses-material-design: true
